@@ -91,6 +91,12 @@ header {
     opacity: 0;
     font-size: 14px;
   }
+  25% {
+    color: rgb(255, 255, 255);
+  }
+  50% {
+    color: rgb(193, 190, 190);
+  }
   100% {
     font-size: 15px;
     opacity: 1;
@@ -101,9 +107,10 @@ header {
   border: none;
   background: none;
   cursor: pointer;
-  animation: textBlink 1s infinite;
+  animation: textBlink 2s infinite;
   position: absolute;
   right: 6%;
+  text-transform: uppercase;
 }
 .header__color-close {
   cursor: pointer;
