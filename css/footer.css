@@ -1,0 +1,19 @@
+footer {
+  padding: 32px 0 32px 0;
+  background: var(--main-col);
+}
+.icon-box__icon {
+  width: 30px;
+}
+.footer__network-cabweb-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main__contacts-box {
+  margin-bottom: clamp(21px, 6vw, 61px);
+}
+.footer__policy {
+    color: var(--text-col);
+    text-decoration: underline;
+}
