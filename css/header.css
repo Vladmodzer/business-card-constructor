@@ -61,7 +61,6 @@ header {
 .header__color-change {
   cursor: pointer;
   padding: 5px 8px;
-
   border-radius: 5px;
 }
 .header__color-change:active {
@@ -87,10 +86,21 @@ header {
   display: flex;
   justify-content: space-between;
 }
+@keyframes textBlink {
+  0% {
+    opacity: 0;
+    font-size: 14px;
+  }
+  100% {
+    font-size: 16px;
+    opacity: 1;
+  }
+}
 .color {
   border: none;
   background: none;
   cursor: pointer;
+  animation: textBlink 1s infinite;
 }
 .header__color-close {
   cursor: pointer;
