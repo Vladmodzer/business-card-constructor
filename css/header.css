@@ -92,15 +92,18 @@ header {
     font-size: 14px;
   }
   100% {
-    font-size: 16px;
+    font-size: 15px;
     opacity: 1;
   }
 }
 .color {
+  color: black;
   border: none;
   background: none;
   cursor: pointer;
   animation: textBlink 1s infinite;
+  position: absolute;
+  right: 6%;
 }
 .header__color-close {
   cursor: pointer;
