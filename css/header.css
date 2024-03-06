@@ -141,6 +141,10 @@ header {
 .hero-pic-box__img-1 {
   object-fit: cover;
 }
+/* .hero-pic-box__img-1{
+
+  box-shadow: 6px 7px 21px 1px black
+} */
 @media (max-width: 2560px) {
   .hero-pic-box__img {
     height: 380px;
