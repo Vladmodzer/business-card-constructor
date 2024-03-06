@@ -16,7 +16,6 @@
             <div class="color-input hidden">
               <div class="color-input-item">
                 <p class="color-input-text">basic background color:</p>
-
                 <input type="color" id="basicBg" />
               </div>
               <div class="color-input-item">
@@ -39,6 +38,10 @@
                   <option value="Georgia">Georgia</option>
                 </select>
               </div>
+              <div class="toggle-container">
+                <input type="checkbox" id="toggle" class="toggle-checkbox">
+                <label for="toggle" class="toggle-label">over photo text white</label>
+              </div>
             </div>
           </div>
           <div class="header__hero-box">
@@ -46,46 +49,99 @@
               <h1 class="header__company-name">“your company name”</h1>
               <h2 class="header__company-slogan">- your company slogan</h2>
             </div>
+            <input
+              type="file"
+              id="uploadFileInput"
+              accept="image/*"
+              style="display: none"
+            />
             <div class="hero-box__hero-pic-box">
-              <img
-                src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
-                alt=""
-                class="hero-pic-box__img"
-              />
+              <label for="uploadFileInput">
+                <img
+                  src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
+                  alt=""
+                  class="hero-pic-box__img"
+                  id="uploadedImage"
+                />
+              </label>
             </div>
           </div>
           <h2 class="header__servuces-title">Services:</h2>
           <div class="header__service-box">
             <div class="service-box__photo-box">
               <p class="photo-box__text">type of service</p>
-              <img
-                src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
-                alt=""
-                class="photo-box__img"
+              <div class="hero-box__hero-pic-box">
+                <label for="uploadFileInput0">
+                  <img
+                    src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
+                    alt=""
+                    class="hero-pic-box__img"
+                    id="uploadedImage0"
+                  />
+                </label>
+              </div>
+              <input
+                type="file"
+                id="uploadFileInput0"
+                accept="image/*"
+                style="display: none"
               />
             </div>
             <div class="service-box__photo-box">
               <p class="photo-box__text">type of service</p>
-              <img
-                src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
-                alt=""
-                class="photo-box__img"
+              <div class="hero-box__hero-pic-box">
+                <label for="uploadFileInput1">
+                  <img
+                    src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
+                    alt=""
+                    class="hero-pic-box__img"
+                    id="uploadedImage1"
+                  />
+                </label>
+              </div>
+              <input
+                type="file"
+                id="uploadFileInput1"
+                accept="image/*"
+                style="display: none"
               />
             </div>
             <div class="service-box__photo-box">
               <p class="photo-box__text">type of service</p>
-              <img
-                src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
-                alt=""
-                class="photo-box__img"
+              <div class="hero-box__hero-pic-box">
+                <label for="uploadFileInput2">
+                  <img
+                    src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
+                    alt=""
+                    class="hero-pic-box__img"
+                    id="uploadedImage2"
+                  />
+                </label>
+              </div>
+              <input
+                type="file"
+                id="uploadFileInput2"
+                accept="image/*"
+                style="display: none"
               />
             </div>
             <div class="service-box__photo-box">
               <p class="photo-box__text">type of service</p>
-              <img
-                src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
-                alt=""
-                class="photo-box__img"
+              <div class="hero-box__hero-pic-box">
+                <label for="uploadFileInput3">
+                  <img
+                    src="./img/age-cache-placeholder-1120x1245-800x800 191.svg"
+                    alt=""
+                    class="hero-pic-box__img"
+                    id="uploadedImage3"
+                  />
+                </label>
+              </div>
+              <input
+                type="file"
+                id="uploadFileInput3"
+                accept="image/*"
+                style="display: none"
               />
             </div>
           </div>
