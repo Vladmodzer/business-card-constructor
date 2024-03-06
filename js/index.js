@@ -129,12 +129,16 @@ function handleToggleChange() {
   const isChecked = this.checked; // Получаем состояние тумблера
 
   if (isChecked) {
-    overPhotoText.forEach(text => {
-        text.style.color = "white";
-    })
+    overPhotoText.forEach((text) => {
+      text.style.color = "white";
+      text.style.background = "rgba(0, 0, 0, 0.5)";
+      text.style.padding = "10px";
+    });
   } else {
-    overPhotoText.forEach(text => {
-        text.style.color = "black";
-    })
+    overPhotoText.forEach((text) => {
+      text.style.color = "black";
+      text.style.background = "rgba(255, 255, 255, 0.5)";
+      text.style.padding = "10px";
+    });
   }
 }
