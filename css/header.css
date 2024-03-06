@@ -199,4 +199,7 @@ header {
   .photo-box__img {
     width: 180px;
   }
+  .header__service-box {
+    margin-bottom: 20px;
+  }
 }
