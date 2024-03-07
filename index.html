@@ -39,15 +39,21 @@
                 </select>
               </div>
               <div class="toggle-container">
-                <input type="checkbox" id="toggle" class="toggle-checkbox">
-                <label for="toggle" class="toggle-label">over photo text white</label>
+                <input type="checkbox" id="toggle" class="toggle-checkbox" />
+                <label for="toggle" class="toggle-label"
+                  >over photo text white</label
+                >
               </div>
             </div>
           </div>
           <div class="header__hero-box">
             <div class="hero-box__text-box">
-              <h1 contenteditable="true" class="header__company-name">“your company name”</h1>
-              <h2 contenteditable="true" class="header__company-slogan">- your company slogan</h2>
+              <h1 contenteditable="true" class="header__company-name">
+                “your company name”
+              </h1>
+              <h2 contenteditable="true" class="header__company-slogan">
+                - your company slogan
+              </h2>
             </div>
             <input
               type="file"
@@ -69,7 +75,6 @@
           <h2 class="header__servuces-title">Services:</h2>
           <div class="header__service-box">
             <div class="service-box__photo-box">
-              <p contenteditable="true" class="photo-box__text">type of service</p>
               <div class="hero-box__hero-pic-box">
                 <label for="uploadFileInput0">
                   <img
@@ -79,6 +84,14 @@
                     id="uploadedImage0"
                   />
                 </label>
+
+                <p
+                  contenteditable="true"
+                  class="photo-box__text"
+                  oninput="limitTextLength(this, 19)"
+                >
+                  type of service
+                </p>
               </div>
               <input
                 type="file"
@@ -88,7 +101,6 @@
               />
             </div>
             <div class="service-box__photo-box">
-              <p contenteditable="true" class="photo-box__text">type of service</p>
               <div class="hero-box__hero-pic-box">
                 <label for="uploadFileInput1">
                   <img
@@ -98,6 +110,14 @@
                     id="uploadedImage1"
                   />
                 </label>
+                <p
+                  oninput="limitTextLength(this, 19)"
+                  contenteditable="true"
+                  maxlength="19"
+                  class="photo-box__text"
+                >
+                  type of service
+                </p>
               </div>
               <input
                 type="file"
@@ -107,7 +127,6 @@
               />
             </div>
             <div class="service-box__photo-box">
-              <p contenteditable="true" class="photo-box__text">type of service</p>
               <div class="hero-box__hero-pic-box">
                 <label for="uploadFileInput2">
                   <img
@@ -117,6 +136,14 @@
                     id="uploadedImage2"
                   />
                 </label>
+                <p
+                  oninput="limitTextLength(this, 19)"
+                  contenteditable="true"
+                  maxlength="19"
+                  class="photo-box__text"
+                >
+                  type of service
+                </p>
               </div>
               <input
                 type="file"
@@ -126,7 +153,6 @@
               />
             </div>
             <div class="service-box__photo-box">
-              <p contenteditable="true" class="photo-box__text">type of service</p>
               <div class="hero-box__hero-pic-box">
                 <label for="uploadFileInput3">
                   <img
@@ -136,6 +162,14 @@
                     id="uploadedImage3"
                   />
                 </label>
+                <p
+                  oninput="limitTextLength(this, 19)"
+                  contenteditable="true"
+                  maxlength="19"
+                  class="photo-box__text"
+                >
+                  type of service
+                </p>
               </div>
               <input
                 type="file"
@@ -194,13 +228,19 @@
                 <p class="adress-box__tittle-phone contacts-tittle-style">
                   Phone:
                 </p>
-                <p contenteditable="true" class="adress-box__text-phone">+49 172 345 6789</p>
-                <p contenteditable="true" class="adress-box__text-phone2">+49 172 345 6789</p>
+                <p contenteditable="true" class="adress-box__text-phone">
+                  +49 172 345 6789
+                </p>
+                <p contenteditable="true" class="adress-box__text-phone2">
+                  +49 172 345 6789
+                </p>
               </div>
             </div>
             <div class="contacts-box__mail-box">
               <p class="mail-box__mail-tittle contacts-tittle-style">E-mail:</p>
-              <p contenteditable="true" class="mail-box__mail">german@mail.com</p>
+              <p contenteditable="true" class="mail-box__mail">
+                german@mail.com
+              </p>
               <p class="mail-box__requisites contacts-tittle-style">
                 Requisites:
               </p>
@@ -337,6 +377,13 @@ c0,24.99,20.34,45.33,45.32,45.33c24.99,0,45.32-20.34,45.32-45.33C273.18,202.88,2
         </div>
       </footer>
     </div>
+    <script>
+      function limitTextLength(element, maxLength) {
+        if (element.textContent.length > maxLength) {
+          element.textContent = element.textContent.slice(0, maxLength);
+        }
+      }
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"
       integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew=="
