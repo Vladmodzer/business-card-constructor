@@ -11,6 +11,7 @@
 .main__contacts-box {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .contacts-box__mail-box {
   max-width: 60%;
@@ -34,6 +35,7 @@
 .adress-box__text-phone,
 .adress-box__text-phone2 {
   font-size: clamp(13px, 1vw, 16px);
+  word-break: break-all;
 }
 .mail-box__text {
   word-break: break-all;
